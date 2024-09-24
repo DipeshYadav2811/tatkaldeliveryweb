@@ -1,13 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  font-family: Railway;
+  padding: 0%;
+  background-color: #fff7e4;
+  box-sizing: border-box;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.aling-center{
+  align-items: center;
+}
+
+.flex-evenly{
+  justify-content: space-evenly;
+}
+
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-column{
+  flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.h2 {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.h1 {
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.h4{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.h3{
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.h6 {
+  font-size: large;
+  font-weight: 600px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.gray-font{
+  color: #7B7A8B
+}
+
+.secondary-color{
+  color: #C88F13
+}
+
+.focus-color{
+  color: #F95C19
+}
+
+.mainContainer{
+  margin-top: 10.058vw;
 }

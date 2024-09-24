@@ -1,0 +1,38 @@
+.navConatiner{
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #fffefa;
+}
+
+.linkList{
+    text-decoration: none;
+    list-style-type: none;
+    gap: 25px;
+}
+
+.navigationLinks{
+    gap: 20px;
+}
+
+.links{
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: bolder;
+    color: #817382;
+    padding: 20px;
+}
+.links:hover{
+    background-color: #FFF7E7;
+    color: #C88F13;
+    /* padding: 10px; */
+}
+
+.contactUsCta{
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+    background-color: #C88F13;
+    border-radius: 5%;
+    padding: 10px;
+}

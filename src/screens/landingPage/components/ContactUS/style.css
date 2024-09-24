@@ -1,0 +1,31 @@
+.contactUsContainer{
+    width: 50.994vw;
+}
+
+.contactUsFormContainer{
+    gap: 0.936vw;
+}
+
+.contactUsImage{
+    width: 16.374vw;
+}
+
+input{
+    width: 24.737vw;
+    height: 2.865vw;
+    border: 0.1px solid #F95C19;
+    outline: #F95C19;
+}
+
+textarea{
+    width: 24.737vw;
+    outline: #F95C19;
+    border: 0.1px solid #F95C19;
+}
+
+.sendButton{
+    background-color: #F95C19;
+    color: #ffff;
+    width: 7.292vw;
+    border-radius: 0.702vw;
+}
