@@ -1,0 +1,21 @@
+.servicesCard{
+    background-color: white;
+    width: 24.795vw;
+    border-radius: 0.702vw;
+    box-shadow: 2px 2px #888888;
+    padding-top: 2.865vw;
+    padding-bottom: 2.865vw;
+}
+
+.cardDescription{
+    margin: 0vw 3.626vw;
+    /* border: 1px solid red */
+}
+
+.cardListing{
+    color: #4D4D4D;
+}
+
+li::marker{
+    color: #F95C19;
+}

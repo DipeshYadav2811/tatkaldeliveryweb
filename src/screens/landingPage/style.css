@@ -1,0 +1,37 @@
+.heroHeading{
+    width: 30.175vw;
+    flex-wrap: wrap;
+    /* border: 1px solid red */
+}
+
+.heroContainer{
+    padding: 1.754vw;
+}
+
+.leftHero{
+ margin-left: 10vw;
+}
+
+.heroSubText{
+    width: 19.298vw;
+    color: #4D4D4D;
+}
+
+.rightHero{
+    width: 56.92;
+}
+
+.heroCta{
+    background-color: #C88F13;
+    width: 10.409vw;
+    padding: 0.702vw 1.17vw;
+    text-align: center;
+    border-radius: 0.702vw;
+    color: white;
+    margin-top: 2.398vw;
+}
+
+.heroCta:hover{
+    background-color: #FFF7E7;
+    color: #C88F13;
+}
