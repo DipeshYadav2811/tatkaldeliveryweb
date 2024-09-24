@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+React App
+Overview
+This is a React application designed with a well-structured folder layout for screens, hooks, and constants. The app uses modern best practices for separation of concerns, ensuring that logic, styles, and constants are modular and reusable.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Prerequisites
+Node.js: Latest version (Ensure you have the latest Node.js version installed. You can download it from here).
+npm: Comes pre-installed with Node.js.
+How to Run the Project
+Clone the repository:
 
-## Available Scripts
+bash
+Copy code
+git clone https://github.com/your-username/your-repo.git
+Navigate to the project directory:
 
-In the project directory, you can run:
+bash
+Copy code
+cd your-repo
+Install dependencies:
 
-### `npm start`
+bash
+Copy code
+npm install
+Start the development server:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm start
+Project Structure
+Follow the project structure outlined below for screens, hooks, constants, and styles.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Folder Structure
+bash
+Copy code
+├── src
+│   ├── screens
+│   │   └── ScreenName
+│   │       ├── index.jsx          # Main component file for the screen
+│   │       ├── style.js           # Styles specific to the screen
+│   │       ├── constants.js       # Screen-specific constants
+│   │
+│   ├── hooks                      # Folder for custom hooks
+│   │   ├── useCustomHook.js
+│   │
+│   ├── styles
+│   │   └── index.css              # Generic/global styles
+│   │
+│   ├── App.js                     # Main entry file for React
+│   ├── index.js                   # Main entry point for the app
+│   └── ...
+Screens
+Each screen will have its own folder inside src/screens/. Inside the screen folder, you should have:
 
-### `npm test`
+index.jsx: The main JSX component for the screen.
+style.js: A file to define all styles specific to the screen.
+constants.js: A file for storing screen-specific constants, such as labels, API endpoints, or static values.
+Hooks
+All custom hooks should be placed in the src/hooks/ folder. Hooks handle the logic of the application separately, which improves the reusability and readability of the code.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Generic Styles
+index.css: All generic/global styles should be placed in this file. If you need to apply any global styles across the app, define them here.
+Branches
+Main Branch: main
+All major changes and production code should be merged into the main branch.
+Example of a Screen Folder:
+bash
+Copy code
+src/screens/Home/
+├── index.jsx          # Home screen component
+├── style.js           # Styles for Home screen
+├── constants.js       # Constants used in Home screen
+Example of Using Custom Hook:
+jsx
+Copy code
+// In src/screens/Home/index.jsx
+import { useHomeLogic } from '../../hooks/useHomeLogic';
 
-### `npm run build`
+function Home() {
+  const { data, handleClick } = useHomeLogic();
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  return (
+    <div>
+      <h1>Home Screen</h1>
+      <button onClick={handleClick}>Click Me</button>
+    </div>
+  );
+}
+Note
+If you're adding any new generic styles, make sure to include them in the index.css file to maintain consistency across the app.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This structure should help keep your project clean, modular, and scalable as it grows.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
