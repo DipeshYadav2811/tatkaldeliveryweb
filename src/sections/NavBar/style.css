@@ -1,38 +1,137 @@
-.navConatiner{
-    padding-left: 25px;
-    padding-right: 25px;
+/* General Styling */
+.navConatiner {
+    /* width: 100vw; */
     background-color: #fffefa;
-}
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logoContainer img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .navigationLinks {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+  }
 
-.linkList{
+  .hamburgerMenu {
+    display: none;
+  }
+  
+  .linkList {
+    display: flex;
     text-decoration: none;
     list-style-type: none;
-    gap: 25px;
-}
-
-.navigationLinks{
-    gap: 20px;
-}
-
-.links{
+    gap: 1.5rem;
+  }
+  
+  .links {
     cursor: pointer;
-    font-size: x-large;
+    font-size: 1rem;
     font-weight: bolder;
     color: #817382;
-    padding: 20px;
-}
-.links:hover{
+    padding: 0.5rem 1rem;
+  }
+  
+  .links:hover {
     background-color: #FFF7E7;
     color: #C88F13;
-    /* padding: 10px; */
-}
-
-.contactUsCta{
+  }
+  
+  .contactUsCta {
     cursor: pointer;
-    font-size: x-large;
+    font-size: 1rem;
     font-weight: bolder;
     color: white;
     background-color: #C88F13;
     border-radius: 5%;
-    padding: 10px;
-}
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Responsive Design */
+  
+  /* Medium Devices (Tablets) */
+  @media (max-width: 768px) {
+    .navConatiner {
+      flex-direction: row;
+      padding: 0.5rem;
+    }
+  
+    .navigationLinks {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .hamburgerMenu {
+        display: none;
+      }
+
+    .linkList {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .links {
+      font-size: 0.9rem;
+    }
+  
+    .contactUsCta {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.8rem;
+    }
+  }
+  
+  /* Small Devices (Mobile Phones) */
+  @media (max-width: 480px) {
+    .logoContainer img {
+      max-width: 100px;
+    }
+  
+    .navigationLinks {
+      display: none; /* Hide the links on small devices */
+    }
+  
+    .hamburgerMenu {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .dropdownMenu {
+      display: none;
+      flex-direction: column;
+      background-color: #fffefa;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .dropdownMenu.show {
+      display: flex;
+    }
+  
+    .links {
+      padding: 0.5rem 0;
+      font-size: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .contactUsCta {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin: 0 auto;
+    }
+  }
+  

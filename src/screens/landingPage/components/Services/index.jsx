@@ -16,6 +16,7 @@ const Services = ({blogHeader, blogList }) => {
               cardHeader={detail?.title}
               cardDesc={detail?.description}
               cardList={detail?.points}
+              icon={detail?.icon}
               isButton={detail.withbutton}
               ButtonTitle={detail.buttonTitle}
             />
