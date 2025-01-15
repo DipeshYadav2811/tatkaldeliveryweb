@@ -1,4 +1,77 @@
-.sevicesCardsContainer{
-   width: 77.193vw;
-   gap: 1.404vw;
-}
+.servicesContainer {
+   padding: 2rem;
+   background-color: #f1f3ff;
+ }
+ 
+ .servicesHeading {
+   margin-bottom: 2rem;
+ }
+ 
+ .sevicesCardsContainer {
+   width: 100%;
+   gap: 1rem;
+   justify-content: center;
+ }
+ 
+ /* Responsive Design */
+ 
+ /* Medium Devices (Tablets) */
+ @media (max-width: 768px) {
+   .sevicesCardsContainer {
+     width: 90%;
+     gap: 1.5rem;
+   }
+ 
+   .servicesCard {
+     width: 90%;
+     padding: 1.5rem;
+     border-radius: 10px;
+   }
+ 
+   .cardDescription {
+     margin: 0 1rem;
+   }
+   
+   .h1 {
+     font-size: 1.8rem;
+   }
+ 
+   .h2 {
+     font-size: 1.2rem;
+   }
+ 
+   .h6 {
+     font-size: 1rem;
+   }
+ }
+ 
+ /* Small Devices (Mobile Phones) */
+ @media (max-width: 480px) {
+   .sevicesCardsContainer {
+     width: 100%;
+     flex-direction: column;
+     gap: 1rem;
+   }
+ 
+   .servicesCard {
+     width: 100%;
+     padding: 1rem;
+   }
+ 
+   .cardDescription {
+     margin: 0 0.5rem;
+   }
+ 
+   .h1 {
+     font-size: 1.5rem;
+   }
+ 
+   .h2 {
+     font-size: 1rem;
+   }
+ 
+   .h6 {
+     font-size: 0.9rem;
+   }
+ }
+ 

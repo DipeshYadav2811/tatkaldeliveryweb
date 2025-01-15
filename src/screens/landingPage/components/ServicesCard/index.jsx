@@ -1,11 +1,10 @@
 import React from 'react'
-import ServicesIcon from '../../../../assets/servicesIcon.svg'
 import './style.css'
-function ServicesCard({cardHeader, cardDesc, cardList, isButton=false, ButtonTitle}) {
+function ServicesCard({cardHeader, cardDesc, cardList, isButton=false, ButtonTitle, icon}) {
   return (
     <div className='servicesCard'>
         <div className='servicesIcon flex flex-column flex-center'>
-            <img src={ServicesIcon} alt='services' />
+            <img src={icon} alt='services' />
             <div>
                 <p className='h2'>{cardHeader}</p>
             </div>

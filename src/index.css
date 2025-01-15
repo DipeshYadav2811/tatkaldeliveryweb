@@ -4,7 +4,7 @@ body {
   margin: 0px;
   font-family: Railway;
   padding: 0%;
-  background-color: #fff7e4;
+  background-color: #F1F3FF;
   box-sizing: border-box;
 }
 
@@ -49,22 +49,22 @@ code {
 
 .h1 {
   font-weight: bolder;
-  font-size: 50px;
+  font-size: 2.924vw;
 }
 
 .h4{
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.17vw;
 }
 
 .h3{
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 1.462vw;
 }
 
 .h6 {
   font-size: large;
-  font-weight: 600px;
+  font-weight: 35.088vw;
 }
 
 .text-center{

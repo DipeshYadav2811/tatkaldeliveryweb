@@ -1,37 +1,101 @@
-.heroHeading{
-    width: 30.175vw;
-    flex-wrap: wrap;
-    /* border: 1px solid red */
-}
-
-.heroContainer{
-    padding: 1.754vw;
-}
-
-.leftHero{
- margin-left: 10vw;
-}
-
-.heroSubText{
-    width: 19.298vw;
-    color: #4D4D4D;
-}
-
-.rightHero{
-    width: 56.92;
-}
-
-.heroCta{
-    background-color: #C88F13;
-    width: 10.409vw;
-    padding: 0.702vw 1.17vw;
-    text-align: center;
-    border-radius: 0.702vw;
+.heroContainer {
+    /* width: 100%; */
+    padding: 2rem;
+    /* background-color: #fffefa; */
+    gap: 2rem;
+  }
+  
+  .leftHero {
+    flex: 1;
+  }
+  
+  .heroHeading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .heroSubText {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .heroCta {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
     color: white;
-    margin-top: 2.398vw;
-}
-
-.heroCta:hover{
-    background-color: #FFF7E7;
-    color: #C88F13;
-}
+    background-color: #C88F13;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .rightHero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rightHero img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  
+  /* Medium Devices (Tablets) */
+  @media (max-width: 768px) {
+    .heroContainer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .leftHero, .rightHero {
+      flex: none;
+      width: 100%;
+    }
+  
+    .heroHeading {
+      font-size: 1.8rem;
+    }
+  
+    .heroSubText {
+      font-size: 0.9rem;
+    }
+  
+    .heroCta {
+      font-size: 1rem;
+      padding: 0.6rem 1.2rem;
+    }
+  }
+  
+  /* Small Devices (Mobile Phones) */
+  @media (max-width: 480px) {
+    .heroContainer {
+      padding: 1.5rem;
+    }
+  
+    .heroHeading {
+      font-size: 1.5rem;
+    }
+  
+    .heroSubText {
+      font-size: 0.8rem;
+    }
+  
+    .heroCta {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .rightHero img {
+      max-width: 80%;
+    }
+  }
+  

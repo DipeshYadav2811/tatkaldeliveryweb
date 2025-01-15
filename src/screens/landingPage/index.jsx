@@ -5,17 +5,26 @@ import Services from './components/Services'
 import TatkalFacts from './components/Facts'
 import {JoinUsDetails, ServicesCardDetails} from '../landingPage/Constants'
 import ContactUs from './components/ContactUS'
-import Footer from '../../sections/Footer'
+import { Element } from 'react-scroll'
 
 const LandingPage = () => {
   return (
     <div>
+      <Element name='hero'>
       <Hero />
+      </Element>
+      <Element name='services'>
       <Services blogHeader={"Our Services"} blogList={ServicesCardDetails} />
-      <TatkalFacts />
+      </Element>
+      <Element name='tatkalFacts'>
+      {/* <TatkalFacts /> */}
+      </Element>
+      <Element name='joinUs'>
       <Services blogHeader={"Join Us"} blogList={JoinUsDetails} />
+      </Element>
+      <Element name='contactUs'>
       <ContactUs />
-      <Footer />
+      </Element>
     </div>
   )
 }
