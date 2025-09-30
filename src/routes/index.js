@@ -9,7 +9,8 @@ const EnteryPoint = () => {
   const hideNavBar = location.pathname === '/privacy-policy' || location.pathname === '/terms-and-conditions';
   return (
     <div>
-        {hideNavBar ? null : <NavBar />}
+        {/* {hideNavBar ? null : <NavBar />} */}
+        <NavBar />
         <Outlet />
         <Footer />
     </div>
